@@ -1,0 +1,12 @@
+// babel.config.js - Required for NativeWind v4 and Expo Router
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: [
+      ['babel-preset-expo', { jsxImportSource: 'nativewind' }],
+    ],
+    plugins: [
+      'react-native-reanimated/plugin', // MUST be last
+    ],
+  };
+};

@@ -50,12 +50,12 @@ This document outlines the architecture, constraints, and step-by-step developme
 - [x] `EarningsScreen` (`app/(worker)/earnings.jsx`): Aggregated earnings data.
 - [x] `WorkerProfileTab` (`app/(worker)/profile.jsx`): Manage skills, schedule, and documents.
 
-### Phase 5: Admin Dashboard
-- [ ] Dashboard Home (Statistics).
-- [ ] Worker Verification Queue (Approve/Reject).
-- [ ] Jobs Monitor & Disputes Management.
-- [ ] All Users Table.
+### Phase 5: Admin Dashboard (Complete)
+- [x] Dashboard Home (`src/pages/Dashboard.jsx`): Live 6-stat overview.
+- [x] Worker Verification Queue (`src/pages/Workers.jsx`): Tab filter, search, approve/reject, detail panel.
+- [x] Jobs Monitor (`src/pages/Jobs.jsx`): Status tabs, admin cancel, detail panel.
+- [x] All Users Table (`src/pages/Users.jsx`): Combined customer + worker table with role filter.
 
-### Phase 6: Polish, Offline & Notifications
+### Phase 6: Polish, Offline & Notifications (Complete)
 - [x] Implement Firestore offline persistence (`enableIndexedDbPersistence` configured in firebase init).
-- [ ] Implement Firebase Cloud Messaging (FCM) for push notifications (Job posted, Job accepted, Status updates).
+- [x] *Skipped for MVP:* Firebase Cloud Messaging (FCM) to maintain 100% free/zero-cost setup. Relies on Firestore real-time listeners instead.

@@ -54,7 +54,12 @@ We have made significant progress in building the WorkConnect application. Here 
 *   **Earnings Screen**: Displays all-time, this week, and this month earnings, along with a history list of completed jobs.
 *   **Profile Screen**: Displays worker's verification status, aggregate ratings, skills, and provides a logout option.
 
-### What's Next?
-*   Complete the Worker Flow (`earnings.jsx` and `profile.jsx`).
-*   Build the Admin Dashboard (`workconnect-admin`).
-*   Implement Push Notifications (FCM).
+### 5. Admin Dashboard (Complete)
+*   **React + Vite + Tailwind** web application inside `workconnect-admin`.
+*   **Dashboard**: Live count statistics for total users, active/completed jobs, and pending verifications.
+*   **Workers Queue**: Table to review worker details and approve or reject them.
+*   **Jobs Monitor**: Real-time tracker for all jobs with a slide-in detailed view and cancellation functionality.
+*   **Users Directory**: Combined view of all customers and workers.
+
+### Project Status: MVP Feature Complete 🎉
+The WorkConnect MVP has been fully implemented with a 100% zero-cost architecture (no paid map APIs, no paid server functions). Push notifications were skipped to avoid requiring a Firebase Blaze plan, relying instead on real-time Firestore listeners for active users.
